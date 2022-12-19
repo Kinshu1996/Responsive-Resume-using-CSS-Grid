@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 300px 700px;
+    min-height: 1000px;
+    margin: 20px;
+}
+.left-section{
+   columns: span1;
+   background-color: rgb(8, 62, 77);
+    color: white;
+}
+.right-section{
+    columns: span1/span2;
+    background-color: rgb(241, 250, 252);
+    width: 90%;
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image img{
+    display: block;
+    margin: auto;
+    border: 5px white solid;
+    border-radius: 30%;
+    width: 60%;
+}
+.name h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+.designation h4{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.social-media{
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+.personal-details{
+    list-style: none;
+    margin: auto;
+}
+.icon{
+    display: block;
+    margin: auto;
+    padding: 8px;  
+}
+i[class |= "fa"]{
+    color: rgb(147, 201, 233);
+    font-size: 0.8rem;
+    text-transform: lowercase;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+    color: white;
+}
+.skill-name{
+    color: white;
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    height: 4px;
+    border: 1px solid white;
+    background-color: white;
+}
+.skill-item{
+    padding: 0.5rem;
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.para{
+    padding: 0.5rem;
+}
+@media screen and (min-width: 0px) and (max-width: 673px) {
+    .main-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
